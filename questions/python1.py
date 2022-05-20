@@ -145,7 +145,10 @@ def four(input):
 	# You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def five(input):
-	return 1
+	if input == 0:
+		return input * five(input-1)
+	else:
+		return 1
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
