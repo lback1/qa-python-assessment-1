@@ -120,7 +120,12 @@ def three(input):
 
 
 def four(input):
-    return False
+	if (input.find("c") == -1) or (input.index("i") < input.index("e")):
+		return True
+	elif (input.index("i") > input.index("e")) and input.find("c") != -1:
+		return True
+	else:
+		return False
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
